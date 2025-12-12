@@ -1,0 +1,70 @@
+{
+    "Perro": [
+        "Chihuahua",
+        "Schnauzer",
+        "Pug",
+        "Labrador Retriever",
+        "Pitbull",
+        "Pastor Alemán",
+        "Poodle Francés",
+        "Dóberman",
+        "Cocker Spaniel",
+        "Perro mestizo"
+    ],
+    "Gato": [
+        "Gato criollo",
+        "Siamés",
+        "Persa",
+        "Angora",
+        "Gato mestizo",
+        "Bengala",
+        "Azul ruso",
+        "Británico de pelo corto",
+        "Maine Coon"
+    ],
+    "Conejo": [
+        "Cabeza de león",
+        "Enano holandés",
+        "Belier",
+        "California",
+        "Mini Rex",
+        "Hotot enano",
+        "Angora"
+    ],
+    "Ave": [
+        "Periquito australiano",
+        "Canario",
+        "Cotorra",
+        "Inseparable (Agapornis)",
+        "Ninfa",
+        "Cacatúa",
+        "Loro amazónico",
+        "Diamante mandarín"
+    ],
+    "Pez": [
+        "Pez Betta",
+        "Pez Dorado",
+        "Molly",
+        "Guppy",
+        "Tetra neón",
+        "Pez ángel",
+        "Platy",
+        "Corydora",
+        "Xipho"
+    ],
+    "Hámster": [
+        "Hámster enano ruso",
+        "Hámster sirio",
+        "Hámster roborowski",
+        "Hámster chino",
+        "Hámster Campbell"
+    ],
+    "Tortuga": [
+        "Tortuga de orejas rojas",
+        "Tortuga japonesa",
+        "Tortuga de caja",
+        "Tortuga terrestre",
+        "Tortuga mapa"
+    ]
+}
+

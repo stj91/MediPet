@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="308.0" prefWidth="416.0" stylesheets="@../css/loginEstilo.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.LoginController">
+   <children>
+      <AnchorPane prefHeight="346.0" prefWidth="169.0" style="-fx-background-color: #bbdefb;" styleClass="left-pane">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="138.0" layoutX="19.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="64.0">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnRegistrar" layoutX="6.0" layoutY="263.0" mnemonicParsing="false" onAction="#registrarUsuario" prefHeight="20.0" prefWidth="139.0" style="-fx-background-color: transparent; -fx-text-fill: #0a466b; -fx-font-size: 12px;" text="Crear una cuenta" textFill="#0a466b" underline="true" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="346.0" prefWidth="229.0">
+         <children>
+            <TextField fx:id="txtUsuario" layoutX="63.0" layoutY="140.0" promptText="Usuario" style="-fx-border-color: #42a5f5; -fx-background-radius: 5px; -fx-background-color: #eeeeee; -fx-border-width: 0px 0px 2px 0px; -fx-border-radius: 3px;" styleClass="textfield" />
+            <PasswordField fx:id="txtPass" layoutX="63.0" layoutY="188.0" promptText="Contraseña" style="-fx-background-color: #eeeeee; -fx-border-color: #42a5f5; -fx-border-width: 0px 0px 2px 0px; -fx-background-radius: 5px;">
+               <styleClass>
+                  <String fx:value="textfield" />
+                  <String fx:value="password-field" />
+               </styleClass>
+            </PasswordField>
+            <Button fx:id="btnLogin" layoutX="61.0" layoutY="230.0" mnemonicParsing="false" onAction="#comprobarLogin" prefHeight="26.0" prefWidth="154.0" text="Iniciar Sesión" />
+            <FontAwesomeIconView fill="#42a5f5" glyphName="USER" layoutX="28.0" layoutY="161.0" size="21" wrappingWidth="27.771379470825195" />
+            <FontAwesomeIconView fill="#42a5f5" glyphName="LOCK" layoutX="29.0" layoutY="209.0" size="20" />
+            <Label alignment="TOP_CENTER" layoutX="58.0" layoutY="90.0" prefHeight="21.0" prefWidth="156.0" text="Bienvenido(a)" textFill="#0a466b">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#42a5f5" glyphName="USERS" layoutX="107.0" layoutY="64.0" size="38" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

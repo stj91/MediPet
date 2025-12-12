@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="251.0" prefWidth="466.0" styleClass="white-bg" stylesheets="@../css/menuprincipal.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.AgregarVacunaController">
+      <children>
+        <VBox alignment="CENTER" fillWidth="false" layoutX="20.0" layoutY="14.0" prefHeight="232.0" prefWidth="433.0" spacing="15" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+      
+            <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #1565c0;" text="Registro de Vacuna" />
+         <GridPane hgap="60.0" prefHeight="76.0" prefWidth="409.0" vgap="20.0">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.40001220703124" minWidth="10.0" prefWidth="155.99998779296874" />
+               <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.59997558593753" minWidth="10.0" prefWidth="155.20001220703128" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+            
+                  <TextField fx:id="txtNombreVacuna" promptText="Nombre de la vacuna" styleClass="textfield" />
+            
+                  <TextField fx:id="txtDosisVacuna" prefHeight="28.0" prefWidth="178.0" promptText="Dosis (ml)" styleClass="textfield" GridPane.columnIndex="1" />
+            
+                  <DatePicker fx:id="dpFechaAplicacion" promptText="Fecha de aplicación" styleClass="textfield" GridPane.rowIndex="1" />
+            
+                  <DatePicker fx:id="dpFechaReaplicacion" prefHeight="28.0" prefWidth="170.0" promptText="Fecha de reaplicación" styleClass="textfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            </children>
+         </GridPane>
+      
+               <Button fx:id="btnGuardarVacuna" onAction="#guardar" prefHeight="26.0" prefWidth="123.0" styleClass="add-btn" text="Guardar">
+            </Button>
+         <styleClass>
+            <String fx:value="white-bg" />
+            <String fx:value="shadow" />
+         </styleClass>
+        </VBox>
+    </children>
+</AnchorPane>

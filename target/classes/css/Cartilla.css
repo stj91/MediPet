@@ -1,0 +1,59 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 22 abr 2025, 10:30:20?p.m.
+    Author     : Homero Ramírez
+*/
+
+
+/* Tarjetas */
+.info-card {
+    -fx-background-color: -fx-white;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+    -fx-padding: 15px;
+}
+
+/* Formulario */
+.form-grid {
+    -fx-background-color: -fx-white;
+    -fx-background-radius: 8px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+.form-grid .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: -fx-dark-gray;
+}
+
+.form-grid .text-field, .form-grid .date-picker {
+    -fx-background-radius: 4px;
+    -fx-border-color: -fx-medium-gray;
+    -fx-border-radius: 4px;
+    -fx-pref-height: 35px;
+}
+
+/* Tabla */
+.medical-table {
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 10, 0, 0, 0);
+}
+
+.medical-table .column-header {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-white;
+    -fx-font-weight: bold;
+}
+
+.medical-table .table-row-cell:odd {
+    -fx-background-color: -fx-light-gray;
+}
+
+.medical-table .table-row-cell:selected {
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-white;
+}

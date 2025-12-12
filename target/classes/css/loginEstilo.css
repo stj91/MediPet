@@ -1,0 +1,43 @@
+/* 
+    Created on : 14 abr 2025, 10:45:11 p.m.
+    Author     : Homero Ramírez
+*/
+
+/* Texto de bienvenida */
+.welcome-text {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-background-color: white;
+}
+
+.button {
+    /*-fx-background-color: #64b5f6;*/
+    -fx-background-color: linear-gradient(to right, #64b5f6, #1e88e5);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-padding: 0 20 0 20;
+    -fx-cursor: hand;
+    -fx-font-size: 14px;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.1), 4, 0, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: #42a5f5;
+}
+
+.button:pressed {
+    -fx-background-color: #1e88e5;
+} 
+
+/* Enlace para recuperar contraseña */
+.forgot-label {
+    -fx-text-fill: #00aaff;
+    -fx-font-size: 12px;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
