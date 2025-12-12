@@ -22,8 +22,6 @@ La aplicación se conecta a una base de datos **MySQL** utilizando XAMPP.
 - JavaFX  
 - SceneBuilder  
 - MySQL (mediante XAMPP)  
-- JDBC  
-- jpackage  
-- Inno Setup  
+- JDBC 
 
 ---
